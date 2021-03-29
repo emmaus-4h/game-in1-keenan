@@ -48,6 +48,33 @@ var score = 0; // aantal behaalde punten
 var tekenVeld = function () {
   fill("purple");
   rect(20, 20, width - 2 * 20, height - 2 * 20);
+
+var images = ['../images/ploutarxos.jpg',
+  '../images/xatzigiannhs.jpg',
+  '../images/taylor_swift.jpg',
+  '../images/selena_gomez.jpg',
+  '../images/the_weeknd.jpg',
+  '../images/drake.jpg'
+];
+
+var img = document.getElementById("img");
+
+function displayImage(x) {
+  img.style.backgroundImage = "url(" + images[x] + ")";
+  img.innerText = images[x];
+}
+function startTimer() {
+  var x = 0;
+  displayImage(x);
+  setInterval(function() {
+    x = x + 1 >= images.length ? 0 : x + 1;
+    displayImage(x);
+  }, 3000);
+}
+swapingImages {
+  heigth: 20px;
+  width: 20px;
+}
 };
 
 
