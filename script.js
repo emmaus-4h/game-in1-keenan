@@ -46,35 +46,8 @@ var score = 0; // aantal behaalde punten
  * Tekent het speelveld
  */
 var tekenVeld = function () {
-  fill("purple");
+  fill("green");
   rect(20, 20, width - 2 * 20, height - 2 * 20);
-
-var images = ['../images/ploutarxos.jpg',
-  '../images/xatzigiannhs.jpg',
-  '../images/taylor_swift.jpg',
-  '../images/selena_gomez.jpg',
-  '../images/the_weeknd.jpg',
-  '../images/drake.jpg'
-];
-
-var img = document.getElementById("img");
-
-function displayImage(x) {
-  img.style.backgroundImage = "url(" + images[x] + ")";
-  img.innerText = images[x];
-}
-function startTimer() {
-  var x = 0;
-  displayImage(x);
-  setInterval(function() {
-    x = x + 1 >= images.length ? 0 : x + 1;
-    displayImage(x);
-  }, 3000);
-}
-swapingImages {
-  heigth: 20px;
-  width: 20px;
-}
 };
 
 
@@ -108,6 +81,30 @@ var tekenKogel = function(x, y) {
 var tekenSpeler = function(spelerX, spelerY) {
   fill("blue");
   ellipse(spelerX, spelerY, 50, 50);
+  var Player = function(id){
+    var self = {
+        x:250,
+        y:250,
+        id:id,
+        number:"" + Math.floor(10 * Math.random()),
+        pressingRight:false,
+        pressingLeft:false,
+        pressingUp:false,
+        pressingDown:false,
+        maxSpd:10,
+    }
+    self.updatePosition = function(){
+        if(self.pressingRight)
+            self.x += self.maxSpd;
+        if(self.pressingLeft)
+            self.x -= self.maxSpd;
+        if(self.pressingUp)
+            self.y -= self.maxSpd;
+        if(self.pressingDown)
+            self.y += self.maxSpd;
+    }
+    return self;
+}
 };
 
 
