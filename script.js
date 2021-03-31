@@ -22,11 +22,11 @@ const SPELEN = 1;
 const GAMEOVER = 2;
 var spelStatus = SPELEN;
 
-var spelerX = 200; // x-positie van speler
-var spelerY = 600; // y-positie van speler
+var spelerX = 200; // x-positie van speler / sonic
+var spelerY = 600; // y-positie van speler / sonic
 
-var kogelX = 150;    // x-positie van kogel
-var kogelY = 600;    // y-positie van kogel
+var kogelX = 150;    // x-positie van kogel / shadow
+var kogelY = 600;    // y-positie van kogel / shadow
 
 var vijandX = 900;   // x-positie van vijand
 var vijandY = 600;   // y-positie van vijand
