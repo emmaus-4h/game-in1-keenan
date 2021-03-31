@@ -23,13 +23,13 @@ const GAMEOVER = 2;
 var spelStatus = SPELEN;
 
 var spelerX = 200; // x-positie van speler
-var spelerY = 100; // y-positie van speler
+var spelerY = 600; // y-positie van speler
 
 var kogelX = 0;    // x-positie van kogel
 var kogelY = 0;    // y-positie van kogel
 
-var vijandX = 0;   // x-positie van vijand
-var vijandY = 0;   // y-positie van vijand
+var vijandX = 900;   // x-positie van vijand
+var vijandY = 600;   // y-positie van vijand
 
 var score = 0; // aantal behaalde punten
 
@@ -56,11 +56,10 @@ var tekenVeld = function () {
  * @param {number} x x-coördinaat
  * @param {number} y y-coördinaat
  */
-var tekenVijand = function(x, y) {
-    
-
-};
-
+var tekenVijand = function(vijandX, vijandY) {
+  fill("red");
+  ellipse(vijandX, vijandY, 120, 50);
+};  
 
 /**
  * Tekent de kogel of de bal
@@ -81,30 +80,6 @@ var tekenKogel = function(x, y) {
 var tekenSpeler = function(spelerX, spelerY) {
   fill("blue");
   ellipse(spelerX, spelerY, 50, 50);
-  var Player = function(id){
-    var self = {
-        x:250,
-        y:250,
-        id:id,
-        number:"" + Math.floor(10 * Math.random()),
-        pressingRight:false,
-        pressingLeft:false,
-        pressingUp:false,
-        pressingDown:false,
-        maxSpd:10,
-    }
-    self.updatePosition = function(){
-        if(self.pressingRight)
-            self.x += self.maxSpd;
-        if(self.pressingLeft)
-            self.x -= self.maxSpd;
-        if(self.pressingUp)
-            self.y -= self.maxSpd;
-        if(self.pressingDown)
-            self.y += self.maxSpd;
-    }
-    return self;
-}
 };
 
 

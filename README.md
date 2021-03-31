@@ -21,7 +21,7 @@ Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 - [ ] hyper style
 
 Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
-- [ ] secret character Silver, Metal Sonic, Knuckles
+- [ ] secret characters Silver, Metal Sonic, Knuckles
 - [ ] boss fights
 - [ ] ???
 
