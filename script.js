@@ -77,9 +77,23 @@ var tekenKogel = function(x, y) {
  * @param {number} x x-coördinaat
  * @param {number} y y-coördinaat
  */
+var ArrowKeyLeft = 37;
+var ArrowKeyRight = 39;
+var ArrowKeyUp = 1;
+var ArrowKeyDown = 2;
+
 var tekenSpeler = function(spelerX, spelerY) {
   fill("blue");
   ellipse(spelerX, spelerY, 50, 50);
+
+  function draw() {
+  if (keyIsDown(ArrowKeyLeft)) {
+    x = x - 1;
+  }
+  if (keyIsDown(ArrowKeyRight)) {
+    x = x + 1;
+  }
+  }
 };
 
 
