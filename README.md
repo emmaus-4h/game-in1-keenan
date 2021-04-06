@@ -25,7 +25,7 @@ Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
 - [ ] secret characters Silver, Metal Sonic, Knuckles
 - [ ] boss fights
-- [ ] ???
+- [ ] beweeg background
 
 ## Credits
 - Game template van het Emmauscollege Rotterdam https://github.com/emmauscollege/4HV-game-template
