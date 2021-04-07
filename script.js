@@ -77,10 +77,10 @@ var tekenKogel = function(x, y) {
  * @param {number} x x-coördinaat
  * @param {number} y y-coördinaat
  */
-var ArrowKeyLeft = 37;
-var ArrowKeyRight = 39;
-var ArrowKeyUp = 1;
-var ArrowKeyDown = 2;
+var ArrowKeyLeft = x -= 1;
+var ArrowKeyRight = x += 1;
+var ArrowKeyUp = y += 1;
+var ArrowKeyDown = y -= 1;
 
 var tekenSpeler = function(spelerX, spelerY) {
   fill("blue");
