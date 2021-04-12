@@ -12,7 +12,7 @@ Basis: uitleg, spelen, afgaan en punten
 - [x] teken vijand
 - [ ] beweeg vijand
 - [ ] beweeg speler
-- [ ] teken veld
+- [x] teken veld
 - [ ] punten op scherm zetten
 - [ ] punten kunnen scoren
 - [ ] uitlegscherm
