@@ -82,20 +82,7 @@ var tekenSpeler = function(spelerX, spelerY) {
   fill("blue");
   ellipse(spelerX, spelerY, 50, 50);  
 };
-/**
- * mislukte pijltjes code
- * function draw() {
-  if (keyIsDown(ArrowKeyLeft)) {
-    x = x - 1;
-  }
-  if (keyIsDown(ArrowKeyRight)) {
-    x = x + 1;
-  }
-var ArrowKeyLeft = x -= 1;
-var ArrowKeyRight = x += 1;
-var ArrowKeyUp = y += 1;
-var ArrowKeyDown = y -= 1;
- */
+
 
 
 /**
