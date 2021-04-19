@@ -108,36 +108,6 @@ var beweegKogel = function() {
 var beweegSpeler = function(spelerX, spelerY) {
   fill("blue");
   ellipse(spelerX, spelerY, 50, 50);  
-
-// HowtoKeyboard
-// voorbeeld hoe je je toetsenbord in spelletjes kunt gebruiken
-
-var x = 400;
-var y = 200;
-// zie keycode.info voor meer codes van toetsen
-var KEY_LEFT = 37;
-var KEY_RIGHT = 39;
-
-function setup() {
-  createCanvas(800,450);
-  background('blue');
-}
-
-function draw() {
-  // kijk welke toetsen zijn ingedrukt en pas x en y aan
-  if (keyIsDown(KEY_LEFT)) {
-    x = x - 1;
-  }
-  if (keyIsDown(KEY_RIGHT)) {
-    x = x + 1;
-  }
-  // teken scherm
-  background("green"); // wis achtergrond
-  fill("white");
-  textSize(20);
-  text("Klik met de muis op het window en druk daarna op pijltje links of rechts", 100, 50);
-  ellipse (x, y, 50, 50); // teken speler
-}
 };
 
 
