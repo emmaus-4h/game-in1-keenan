@@ -22,17 +22,37 @@ const SPELEN = 1;
 const GAMEOVER = 2;
 var spelStatus = SPELEN;
 
+// -----------------------------
+
+// Sonic's data / speler data
 var spelerX = 200; // x-positie van speler / sonic
 var spelerY = 600; // y-positie van speler / sonic
+var spelerYsnelheid = 0; // snelheid van de speler die beweegt
+var spelerYgravity = 0,5; // hoeveel seconde bij de snelheid komt door de gravity
+var spelerYvloer = 600; // hoogte van de vloer, player can't force through the ground
+var LEFT_KEY = 37;
+var RIGHT_KEY = 39;
+var UP_KEY = 38;
+var DOWN_KEY = 36;
 
+// -------------------------------
+
+// AI Shadow's / kogel data
 var kogelX = 150;    // x-positie van kogel / shadow
 var kogelY = 600;    // y-positie van kogel / shadow
 
+// -----------------------------
+
+// Enemy data
 var vijandX = 900;   // x-positie van vijand
 var vijandY = 600;   // y-positie van vijand
 
+// -----------------------------
+
+// Game points
 var score = 0; // aantal behaalde punten
 
+// -----------------------------
 
 
 
@@ -105,9 +125,8 @@ var beweegKogel = function() {
  * Kijkt wat de toetsen/muis etc zijn.
  * Updatet globale variabele spelerX en spelerY
  */
-var beweegSpeler = function(spelerX, spelerY) {
-  fill("blue");
-  ellipse(spelerX, spelerY, 50, 50);  
+var beweegSpeler = function() {
+
 };
 
 
