@@ -27,8 +27,11 @@ var spelStatus = SPELEN;
 // Sonic's data / speler data
 var spelerX = 200; // x-positie van speler / sonic
 var spelerY = 600; // y-positie van speler / sonic
+var spelerXsnelheid = 0; // snelheid van de speler die beweegt
+var spelerXgravity = 50; // hoeveel seconde bij de snelheid komt door de gravity
+var spelerXvloer = 600; // horizontale hoogte van de vloer, player can't force through the ground
 var spelerYsnelheid = 0; // snelheid van de speler die beweegt
-var spelerYgravityt = 50; // hoeveel seconde bij de snelheid komt door de gravity
+var spelerYgravity = 50; // hoeveel seconde bij de snelheid komt door de gravity
 var spelerYvloer = 600; // hoogte van de vloer, player can't force through the ground
 var LEFT_KEY = 37;
 var RIGHT_KEY = 39;
