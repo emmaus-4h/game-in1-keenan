@@ -11,7 +11,7 @@
  */
 
 
-
+//console.log(""); om dingen te checken in je log
 
 /* ********************************************* */
 /* globale variabelen die je gebruikt in je game */
@@ -27,16 +27,13 @@ var spelStatus = SPELEN;
 // Sonic's data / speler data
 var spelerX = 200; // x-positie van speler / sonic
 var spelerY = 600; // y-positie van speler / sonic
-var spelerXsnelheid = 0; // snelheid van de speler die beweegt
-var spelerXgravity = 50; // hoeveel seconde bij de snelheid komt door de gravity
-var spelerXvloer = 600; // horizontale hoogte van de vloer, player can't force through the ground
-var spelerYsnelheid = 0; // snelheid van de speler die beweegt
+var spelerYsnelheid = 20; // snelheid van de speler die beweegt
 var spelerYgravity = 50; // hoeveel seconde bij de snelheid komt door de gravity
 var spelerYvloer = 600; // hoogte van de vloer, player can't force through the ground
-var LEFT_KEY = 37;
-var RIGHT_KEY = 39;
-var UP_KEY = 38;
-var DOWN_KEY = 36;
+var ArrowLeft = 37;
+var ArrowRight = 38;
+var ArrowUp = 39;
+var ArrowDown = 40;
 
 // -------------------------------
 
@@ -128,8 +125,19 @@ var beweegKogel = function() {
  * Kijkt wat de toetsen/muis etc zijn.
  * Updatet globale variabele spelerX en spelerY
  */
-var beweegSpeler = function() {
-
+var beweegSpeler = function draw() {
+   if (keyIsDown(37)) {
+    spelerX = spelerX - 1;
+  }
+  if (keyIsDown(38)) {
+    spelerY = spelerY + 1;
+  }
+  if (keyIsDown(39)) {
+    spelerX = spelerX - 1;
+  }
+  if (keyIsDown(40)) {
+    spelerY = spelerY + 1;
+  }
 };
 
 
