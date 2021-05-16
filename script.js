@@ -127,16 +127,16 @@ var beweegKogel = function() {
  */
 var beweegSpeler = function draw() {
    if (keyIsDown(37)) {
-    spelerX = spelerX - 1;
+    spelerX = spelerX - 5;
   }
   if (keyIsDown(38)) {
-    spelerY = spelerY + 1;
+    spelerY = spelerY - 5;
   }
   if (keyIsDown(39)) {
-    spelerX = spelerX - 1;
+    spelerX = spelerX + 5;
   }
   if (keyIsDown(40)) {
-    spelerY = spelerY + 1;
+    spelerY = spelerY + 5;
   }
 };
 
