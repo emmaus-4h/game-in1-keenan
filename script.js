@@ -40,6 +40,14 @@ var ArrowDown = 40;
 // AI Shadow's / kogel data
 var kogelX = 150;    // x-positie van kogel / shadow
 var kogelY = 600;    // y-positie van kogel / shadow
+var kogelYsnelheid = 20; // snelheid van de speler die beweegt
+var kogelYgravity = 50; // hoeveel seconde bij de snelheid komt door de gravity
+var kogelYvloer = 600; // hoogte van de vloer, player can't force through the ground
+var A = 65;
+var D = 68;
+var W = 87;
+var S = 83;
+
 
 // -----------------------------
 
@@ -138,7 +146,24 @@ var beweegSpeler = function draw() {
   if (keyIsDown(40)) {
     spelerY = spelerY + 5;
   }
+
+  var beweegKOgel = function draw() {
+   if (keyIsDown(87)) {
+    kogelX = kogelX - 5;
+  }
+  if (keyIsDown(65)) {
+    kogelY = kogelY - 5;
+  }
+  if (keyIsDown(68)) {
+    kogelX = kogelX + 5;
+  }
+  if (keyIsDown(83)) {
+    kogelY = kogelY + 5;
+  }
 };
+
+};
+
 
 
 /**
