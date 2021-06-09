@@ -1,6 +1,6 @@
 Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
-## Sonic and Shadow
+## Sonic and Shadow Scary Maze
 Gemaakt door:
 - Keenan Cheung
 

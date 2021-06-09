@@ -63,6 +63,8 @@ var score = 0; // aantal behaalde punten
 // -----------------------------
 
 
+// Maze
+
 
 
 /* ********************************************* */
@@ -125,6 +127,18 @@ var beweegVijand = function() {
  * Updatet globale variabelen met positie van kogel of bal
  */
 var beweegKogel = function() {
+   if (keyIsDown(87)) {
+    kogelX = kogelX - 5;
+  }
+  if (keyIsDown(65)) {
+    kogelY = kogelY - 5;
+  }
+  if (keyIsDown(68)) {
+    kogelX = kogelX + 5;
+  }
+  if (keyIsDown(83)) {
+    kogelY = kogelY + 5;
+  }
 
 };
 
@@ -146,22 +160,6 @@ var beweegSpeler = function draw() {
   if (keyIsDown(40)) {
     spelerY = spelerY + 5;
   }
-
-  var beweegKOgel = function draw() {
-   if (keyIsDown(87)) {
-    kogelX = kogelX - 5;
-  }
-  if (keyIsDown(65)) {
-    kogelY = kogelY - 5;
-  }
-  if (keyIsDown(68)) {
-    kogelX = kogelX + 5;
-  }
-  if (keyIsDown(83)) {
-    kogelY = kogelY + 5;
-  }
-};
-
 };
 
 
