@@ -76,7 +76,7 @@ var score = 0; // aantal behaalde punten
  * Tekent het speelveld
  */
 var tekenVeld = function () {
-  fill("green");
+  fill("grey");
   rect(20, 20, width - 2 * 20, height - 2 * 20);
 };
 
@@ -127,10 +127,10 @@ var beweegVijand = function() {
  * Updatet globale variabelen met positie van kogel of bal
  */
 var beweegKogel = function() {
-   if (keyIsDown(87)) {
+   if (keyIsDown(65)) {
     kogelX = kogelX - 5;
   }
-  if (keyIsDown(65)) {
+  if (keyIsDown(87)) {
     kogelY = kogelY - 5;
   }
   if (keyIsDown(68)) {
@@ -205,7 +205,7 @@ function setup() {
   createCanvas(1280, 720);
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
-  background('skyblue');
+  background('black');
 }
 
 
