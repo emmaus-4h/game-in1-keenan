@@ -64,9 +64,7 @@ var score = 0; // aantal behaalde punten
 
 
 // Maze
-
-
-
+var line = function draw()
 /* ********************************************* */
 /*      functies die je gebruikt in je game      */
 /* ********************************************* */
