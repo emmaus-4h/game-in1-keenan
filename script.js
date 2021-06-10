@@ -64,31 +64,19 @@ var score = 0; // aantal behaalde punten
 
 
 // Maze
-var drawbackground = function () {
-noStroke();
-rect(0, 300, 400, 100);
-
-}; 
 var x = 0;
 var y = 0;
-
 draw = function() {
-    background(255, 255, 255);
+    background(0, 0, 0);
     
     noStroke();
-    fill(79, 255, 94);
-    
-    // Moves across the canvas, getting taller
-    ellipse(x, 200, 30, 30+x/3);
-    
-    // Moves down the canvas, getting wider
-    ellipse(200, y, 30+y/3, 30);
-    
-    // Add one to each of the variables
-    x++;
-    y++;
-};
+    fill(255, 255, 255);
+    rect(x, 200, 50, 800+x/3);
+    rect(200, y, 670+y/3, 90);
+    rect(50, 680, 500+y/3, 40);
+    rect(x, 400, 460+y/3, 60);
 
+};
 
 
 
@@ -137,6 +125,7 @@ var tekenSpeler = function(spelerX, spelerY) {
   fill("blue");
   ellipse(spelerX, spelerY, 50, 50);  
 };
+
 
 
 
