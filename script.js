@@ -86,10 +86,13 @@ var tekenVeld = function () {
     rect(100, 300, 65, 350);
     rect(100, 620, 150, 75);
     rect(100, 300, 750, 150);
+    rect(100, 90, 800, 150);
+    rect(100, 110, 800, 150);
 
 noStroke(); // overlasped white lines
     fill(0, 0, 0); // colour black
     rect(40, 300, 740, 150);
+    rect(80, 90, 750, 150);
 
      noStroke(); // overlasped black lines
     fill(255, 255, 255); // colour white
