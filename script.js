@@ -81,6 +81,7 @@ var tekenVeld = function () {
     noStroke(); // the lines
     fill(255, 255, 255); // colour white
 
+  
     rect(100, 240, 800, 60);
     rect(100, 240, 300, 60);
     rect(100, 300, 65, 350);
@@ -91,8 +92,9 @@ var tekenVeld = function () {
     rect(100, 400, 750, 150);
     rect(100, 500, 750, 150);
     rect(550, 590, 700, 100);
-    
 
+    
+    
 noStroke(); // overlasped white lines
     fill(0, 0, 0); // colour black
     rect(40, 300, 740, 150);
@@ -164,7 +166,10 @@ var tekenKogel = function(x, y) {
 
 var tekenSpeler = function(spelerX, spelerY) {
   fill("blue");
-  ellipse(spelerX, spelerY, 50, 50);  
+  ellipse(spelerX, spelerY, 50, 50);
+
+
+
 };
 
 
@@ -174,8 +179,8 @@ var tekenSpeler = function(spelerX, spelerY) {
  * Updatet globale variabelen met positie van vijand of tegenspeler
  */
 var beweegVijand = function() {
-    
 };
+    
 
 
 /**
