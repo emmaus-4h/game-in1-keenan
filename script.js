@@ -38,8 +38,8 @@ var ArrowDown = 40;
 // -------------------------------
 
 // AI Shadow's / kogel data
-var kogelX = 150;    // x-positie van kogel / shadow
-var kogelY = 660;    // y-positie van kogel / shadow
+var kogelX = 150;    // x-positie van kogel / tails
+var kogelY = 660;    // y-positie van kogel / tails
 var kogelYsnelheid = 20; // snelheid van de speler die beweegt
 var kogelYgravity = 50; // hoeveel seconde bij de snelheid komt door de gravity
 var kogelYvloer = 600; // hoogte van de vloer, player can't force through the ground
@@ -88,21 +88,26 @@ var tekenVeld = function () {
     rect(100, 300, 750, 150);
     rect(100, 90, 800, 150);
     rect(100, 110, 800, 150);
+    rect(100, 400, 750, 150);
 
 noStroke(); // overlasped white lines
     fill(0, 0, 0); // colour black
     rect(40, 300, 740, 150);
     rect(80, 90, 750, 150);
+    rect(100, 400, 500, 200);
+    
 
      noStroke(); // overlasped black lines
     fill(255, 255, 255); // colour white
 rect(100, 250, 65, 200);
+rect(100, 250, 65, 400);
+
 
 };
 
 
 /**
- * Tekent de vijand
+ * Tekent de vijand // The Exit
  * @param {number} x x-coördinaat
  * @param {number} y y-coördinaat
  */
@@ -112,12 +117,12 @@ var tekenVijand = function(vijandX, vijandY) {
 };  
 
 /**
- * Tekent de kogel of de bal / ai named Shadow die volgt je
+ * Tekent de kogel of de bal / ai named Tails die ook naar de goal moet gaan
  * @param {number} x x-coördinaat
  * @param {number} y y-coördinaat
  */
 var tekenKogel = function(x, y) {
-  fill("grey");
+  fill("orange");
   ellipse(kogelX, kogelY, 50, 50);
 };
 
