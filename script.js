@@ -75,16 +75,16 @@ var tekenVeld = function () {
   fill("black");
   rect(20, 20, width - 2 * 20, height - 2 * 20);
 
-  var x = 0;
-var y = 0;
+  
 
     
     noStroke();
-    fill(255, 255, 255);
-    rect(x, 200, 50, 800+x/3);
-    rect(200, y, 670+y/3, 90);
-    rect(50, 680, 500+y/3, 40);
-    rect(x, 400, 460+y/3, 60);
+    fill(255, 255, 255); // colour white
+
+    rect(0, 200, 50, 83);
+    rect(100, 240, 300, 60);
+    rect(100, 300, 65, 350);
+    rect(100, 620, 150, 75);
 
 
 
