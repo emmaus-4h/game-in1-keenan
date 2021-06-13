@@ -26,7 +26,7 @@ var spelStatus = SPELEN;
 
 // Sonic's data / speler data
 var spelerX = 200; // x-positie van speler / sonic
-var spelerY = 600; // y-positie van speler / sonic
+var spelerY = 660; // y-positie van speler / sonic
 var spelerYsnelheid = 20; // snelheid van de speler die beweegt
 var spelerYgravity = 50; // hoeveel seconde bij de snelheid komt door de gravity
 var spelerYvloer = 600; // hoogte van de vloer, player can't force through the ground
@@ -39,7 +39,7 @@ var ArrowDown = 40;
 
 // AI Shadow's / kogel data
 var kogelX = 150;    // x-positie van kogel / shadow
-var kogelY = 600;    // y-positie van kogel / shadow
+var kogelY = 660;    // y-positie van kogel / shadow
 var kogelYsnelheid = 20; // snelheid van de speler die beweegt
 var kogelYgravity = 50; // hoeveel seconde bij de snelheid komt door de gravity
 var kogelYvloer = 600; // hoogte van de vloer, player can't force through the ground
@@ -52,8 +52,8 @@ var S = 83;
 // -----------------------------
 
 // Enemy data
-var vijandX = 900;   // x-positie van vijand
-var vijandY = 600;   // y-positie van vijand
+var vijandX = 1150;   // x-positie van vijand
+var vijandY = 660;   // y-positie van vijand
 
 // -----------------------------
 
@@ -61,23 +61,6 @@ var vijandY = 600;   // y-positie van vijand
 var score = 0; // aantal behaalde punten
 
 // -----------------------------
-
-
-// Maze
-var x = 0;
-var y = 0;
-draw = function() {
-    background(0, 0, 0);
-    
-    noStroke();
-    fill(255, 255, 255);
-    rect(x, 200, 50, 800+x/3);
-    rect(200, y, 670+y/3, 90);
-    rect(50, 680, 500+y/3, 40);
-    rect(x, 400, 460+y/3, 60);
-
-};
-
 
 
 /* ********************************************* */
@@ -89,8 +72,22 @@ draw = function() {
  * Tekent het speelveld
  */
 var tekenVeld = function () {
-  fill("grey");
+  fill("black");
   rect(20, 20, width - 2 * 20, height - 2 * 20);
+
+  var x = 0;
+var y = 0;
+
+    
+    noStroke();
+    fill(255, 255, 255);
+    rect(x, 200, 50, 800+x/3);
+    rect(200, y, 670+y/3, 90);
+    rect(50, 680, 500+y/3, 40);
+    rect(x, 400, 460+y/3, 60);
+
+
+
 };
 
 
@@ -110,7 +107,7 @@ var tekenVijand = function(vijandX, vijandY) {
  * @param {number} y y-coördinaat
  */
 var tekenKogel = function(x, y) {
-  fill("black");
+  fill("grey");
   ellipse(kogelX, kogelY, 50, 50);
 };
 
@@ -219,7 +216,7 @@ function setup() {
   createCanvas(1280, 720);
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
-  background('black');
+  background('pink');
 }
 
 
