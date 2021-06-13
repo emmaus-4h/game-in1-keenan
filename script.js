@@ -90,6 +90,7 @@ var tekenVeld = function () {
     rect(100, 110, 800, 150);
     rect(100, 400, 750, 150);
     rect(100, 500, 750, 150);
+    rect(550, 590, 700, 100);
     
 
 noStroke(); // overlasped white lines
@@ -105,12 +106,33 @@ noStroke(); // overlasped white lines
     fill(255, 255, 255); // colour white
 rect(100, 250, 65, 200);
 rect(100, 250, 65, 400);
+rect(550, 300, 30, 100);
+rect(600, 450, 250, 200);
 
-noStroke(); // overlasped white lines that overlasped the other lines
+noStroke(); // overlasped white lines that overlasped the other black lines
 fill(0, 0, 0); // colour black
 rect(600, 500, 250, 150);
+rect(800, 500, 250, 150);
+rect(550, 300, 30, 100);
+
+noStroke(); // overlasped black lines that overlasped the other white lines
+fill(255, 255, 255); // colour white
+rect(600, 630, 600, 20);
+rect(600, 500, 20, 150);
+rect(600, 500, 250, 20);
+
+
+
+// Text
+fill(101,28,50);
+
+textSize(90);
+textFont("Party Let");
+text("Touch the Black if you dare ! ;)", 40, 150);
 
 };
+
+
 
 
 /**
