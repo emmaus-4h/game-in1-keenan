@@ -89,12 +89,16 @@ var tekenVeld = function () {
     rect(100, 90, 800, 150);
     rect(100, 110, 800, 150);
     rect(100, 400, 750, 150);
+    rect(100, 500, 750, 150);
+    
 
 noStroke(); // overlasped white lines
     fill(0, 0, 0); // colour black
     rect(40, 300, 740, 150);
     rect(80, 90, 750, 150);
-    rect(100, 400, 500, 200);
+    rect(50, 400, 500, 200);
+    rect(250, 500, 300, 150);
+    
     
 
      noStroke(); // overlasped black lines
@@ -102,6 +106,9 @@ noStroke(); // overlasped white lines
 rect(100, 250, 65, 200);
 rect(100, 250, 65, 400);
 
+noStroke(); // overlasped white lines that overlasped the other lines
+fill(0, 0, 0); // colour black
+rect(600, 500, 250, 150);
 
 };
 
